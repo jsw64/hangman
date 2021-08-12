@@ -104,7 +104,8 @@ int main()
       if(oldCorrect == numCorrect)
       {
         numLives--;
-        printf("Sorry, wrong guess\n");
+        printf("Sorry, wrong guess\nLives left: %d", numLives);
+        printf("\n");
         if(numLives == 0)
         {
           break;
@@ -112,7 +113,8 @@ int main()
       }
       else
       {
-        printf("Correct guess\n");
+        printf("Correct guess\nLives left: %d", numLives);
+        printf("\n");
       }
     }
 
